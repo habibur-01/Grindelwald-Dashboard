@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <title>Dashboard</title>
+    </head>
+    <body>
+
+        <div class="dashboard">
+            <nav class="navbar-container">
+                <div class="navbar">
+                    <div class="profile-container">
+                        <img src="./images/Profile.png" alt="profile"
+                            class="profile">
+
+                        <div class="notification">
+                            <p>4</p>
+                        </div>
+
+                    </div>
+                    <div>
+                        <p class="user-name">Samantha</p>
+                        <p class="user-email">samantha@gmail.com</p>
+                    </div>
+                    <div class="navbar-route">
+                        <ul>
+                            <li>
+                                <a href="/">Dashbord</a>
+                            </li>
+                            <li>
+                                <a href="/">Expenses</a>
+                            </li>
+                            <li>
+                                <a href="/">Wallets</a>
+                            </li>
+                            <li>
+                                <a href="/">Summary</a>
+                            </li>
+                            <li>
+                                <a href="/">Accounts</a>
+                            </li>
+                            <li>
+                                <a href="/">Settings</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="expenses-container">
+                    <div class="expenses-content">
+                        <div>
+                            <h1 class="container-header">Expenses</h1>
+                            <p class="container-subheader">01 - 25 March,
+                                2020</p>
+                        </div>
+                        <div>
+                            <div class="img-container">
+                                <img src="./images/Group 3.png" alt>
+                                <img src="./images/Group 3 Copy 6.png" alt>
+                                <img src="./images/Group 3.png" alt>
+                                <div class="add-btn">
+                                    <p>+</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="bar-chart">
+                        <canvas id="myBarChart" width={100%}
+                            height="100px"></canvas>
+                    </div>
+                    <div>
+                        <div class="today-expenses">
+                            <p class="title">Today</p>
+                            <div>
+                                <i class="fa-solid fa-ellipsis fa-2x"
+                                    style="color: #CCc;"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <table class>
+                                <tbody>
+                                    <tr class="product-details">
+                                        <td class="product-type-container">
+                                            <div class="icon">
+                                                <i
+                                                    class="fa-solid fa-cart-shopping"
+                                                    style="color: #FFF;"></i>
+                                            </div>
+                                            <div>
+                                                <h1
+                                                    class="product-type">Grocery</h1>
+                                                <p class="purchase-time">5:12 pm
+                                                    . Belanja di pasar</p>
+                                            </div>
+                                        </td>
+                                        <td class="amount">-326.800</td>
+                                    </tr>
+                                    <tr class="product-details">
+                                        <td class="product-type-container">
+                                            <div class="icon bus-icon">
+                                                <i
+                                                    class="fa-solid fa-cart-shopping"
+                                                    style="color: #FFF;"></i>
+                                            </div>
+                                            <div>
+                                                <h1
+                                                    class="product-type">Transportation</h1>
+                                                <p class="purchase-time">5:12 pm
+                                                    . Belanja di pasar</p>
+                                            </div>
+                                        </td>
+                                        <td class="amount">-326.800</td>
+                                    </tr>
+                                    <tr class="product-details">
+                                        <td class="product-type-container">
+                                            <div class="icon house-icon">
+                                                <i class="fa-solid fa-house"
+                                                    style="color: #FFF;"></i>
+                                            </div>
+                                            <div>
+                                                <h1
+                                                    class="product-type">Housing</h1>
+                                                <p class="purchase-time">5:12 pm
+                                                    . Belanja di pasar</p>
+                                            </div>
+                                        </td>
+                                        <td class="amount">-326.800</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="today-expenses">
+                            <p class="title">Today</p>
+                            <div>
+                                <i class="fa-solid fa-ellipsis fa-2x"
+                                    style="color: #CCc;"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <table class>
+                                <tbody>
+                                    <tr class="product-details">
+                                        <td class="product-type-container">
+                                            <div class="icon food-icon">
+                                                <i
+                                                    class="fa-solid fa-bell-concierge"
+                                                    style="color: #FFF;"></i>
+                                            </div>
+                                            <div>
+                                                <h1
+                                                    class="product-type">Grocery</h1>
+                                                <p class="purchase-time">5:12 pm
+                                                    . Belanja di pasar</p>
+                                            </div>
+                                        </td>
+                                        <td class="amount">-326.800</td>
+                                    </tr>
+                                    <tr class="product-details">
+                                        <td class="product-type-container">
+                                            <div class="icon play-icon">
+                                                <i
+                                                    class="fa-solid fa-circle-play"
+                                                    style="color: #FFF;"></i>
+                                            </div>
+                                            <div>
+                                                <h1
+                                                    class="product-type">Transportation</h1>
+                                                <p class="purchase-time">5:12 pm
+                                                    . Belanja di pasar</p>
+                                            </div>
+                                        </td>
+                                        <td class="amount">-326.800</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cost-stat">
+                    <h1 class="cost-title">Where your money go?</h1>
+                    <div class="skill-bar">
+                        <div class="bar">
+                            <div class="info">
+                                <p>Food and Services</p>
+                                <p>928.50</p>
+
+                            </div>
+                            <div class="progress-line"><span></span></div>
+
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <p>Shopping</p>
+                                <p>1,378.200</p>
+
+                            </div>
+                            <div class="progress-line"><span></span></div>
+
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <p>Housing</p>
+                                <p>928.50</p>
+
+                            </div>
+                            <div class="progress-line"><span></span></div>
+
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <p>Transportation</p>
+                                <p>420.700</p>
+
+                            </div>
+                            <div class="progress-line"><span></span></div>
+
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <p>Vehicle</p>
+                                <p>520.000</p>
+
+                            </div>
+                            <div class="progress-line"><span></span></div>
+
+                        </div>
+
+                    </div>
+                    <div class="tips-container">
+                        <div class="tips-card">
+                            <p class="titps-title">Save more money</p>
+                            <p class="tip-details">eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad
+                                minim.</p>
+                            <button class="tip-btn">VIEW TIPS</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <script>
+            var ctx = document.getElementById('myBarChart').getContext('2d');
+            var myBarChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Housing', 'Shopping', 'Transportation', 'Vehicle', "Food", 'Fees', "Salary", 'Others', "Cost" ],
+                    datasets: [{
+                        label: 'Expenses',
+                        data: [400.50, 450.20, 420.70, 520.00, 400.00, 300, 400.50,950.60,470.90],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            grid: {
+                                display: false
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            display: false,
+                            grid: {
+                                display: false
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        </script>
+
+    </body>
+</html>

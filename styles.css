@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #101010;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.dashboard {
+    display: flex;
+
+}
+
+.container {
+    flex-grow: 1;
+    margin: 40px;
+    border-radius: 50px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-container {
+    width: 400px;
+    height: 900px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: 180px;
+}
+
+.profile-container {
+    height: 72px;
+    width: 72px;
+    border-radius: 16px;
+    position: relative;
+}
+
+.profile {
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.notification {
+    background-color: #dc3434;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.user-name {
+    font-size: 30px;
+    font-weight: 600;
+    color: #FFF;
+    margin-top: 10px;
+}
+
+.user-email {
+    font-size: 17px;
+    font-weight: 400;
+    opacity: 0.6;
+    color: #FFF;
+}
+
+.navbar-route {
+    margin-top: 100px;
+}
+
+.navbar-route ul li {
+    list-style: none;
+    margin-bottom: 30px;
+
+}
+
+.navbar-route ul li a {
+    text-decoration: none;
+    color: #FFF;
+    opacity: 0.5;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.navbar-route ul li a:hover {
+    cursor: pointer;
+}
+
+.navbar-route ul li a:active {
+    opacity: 1;
+}
+.expenses-container{
+  padding: 60px 80px;
+  width: 60%;
+}
+
+.container-header {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.container-subheader {
+    font-size: 16px;
+    opacity: 0.5;
+}
+.expenses-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.add-btn{
+    width: 24px;
+    height: 24px;
+    border: 1px solid #D2DCE8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D2DCE8;
+}
+.img-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.img-container img{
+    margin-left: -20px;
+}
+.today-expenses{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.title{
+    font-size: 18px;
+    color: #262A41;
+    padding: 10px 0px;
+    
+}
+
+.icon{
+   width: 48px;
+   height: 48px;
+   border-radius: 50%;
+   background: #32A7E2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+table{
+    width: 100%;
+}
+
+.product-type-container{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    gap: 20px;
+    color: #404852;
+}
+.product-type{
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+.purchase-time{
+    font-size: 14px;
+    opacity: 0.5;
+    margin-top: 5px;
+}
+.amount{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: right;
+}
+.bus-icon{
+    background: #B548C6;
+
+}
+.house-icon{
+    background: #FF8700;
+
+}
+.food-icon{
+    background-color: #DC3434;
+}
+.play-icon{
+    background: #4BA83D;
+}
+.cost-stat{
+   width: 350px;
+   padding: 60px 40px;
+   background-color: #F9FAFC;
+   border-top-right-radius: 48px;
+   border-bottom-right-radius: 48px;
+   color:#273240;
+
+}
+.cost-title{
+    font-size: 20px;
+}
+.tips-container{
+    background-image: url("./images/Box-Tips\ \(1\).png");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-color: #EDF0F6; */
+    width: 250px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    /* margin-top: 100px; */
+    margin: 100px auto 0px;
+}
+.tips-card{
+    width: 80%;
+}
+.titps-title{
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.tip-details{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+.tip-btn{
+    background: #101010;
+    width: 100%;
+    color: #FFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    margin-top: 50px;
+
+}
+.bar{
+    margin-top: 30px;
+}
+.skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.skill-bar .bar .progress-line{
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+}
+.bar .progress-line span{
+    height: 100%;
+    width: 40%;
+    background-color: #31BA96;
+    position: absolute;
+}
+.bar-chart{
+    margin-top: 20px;
+}
