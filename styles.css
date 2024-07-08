@@ -102,9 +102,10 @@ body {
 .navbar-route ul li a:active {
     opacity: 1;
 }
-.expenses-container{
-  padding: 60px 80px;
-  width: 60%;
+
+.expenses-container {
+    padding: 60px 80px;
+    width: 60%;
 }
 
 .container-header {
@@ -116,12 +117,14 @@ body {
     font-size: 16px;
     opacity: 0.5;
 }
-.expenses-content{
+
+.expenses-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.add-btn{
+
+.add-btn {
     width: 24px;
     height: 24px;
     border: 1px solid #D2DCE8;
@@ -131,90 +134,105 @@ body {
     align-items: center;
     color: #D2DCE8;
 }
-.img-container{
+
+.img-container {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.img-container img{
+
+.img-container img {
     margin-left: -20px;
 }
-.today-expenses{
+
+.today-expenses {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
     border-bottom: 1px solid #ccc;
 }
-.title{
+
+.title {
     font-size: 18px;
     color: #262A41;
     padding: 10px 0px;
-    
+
 }
 
-.icon{
-   width: 48px;
-   height: 48px;
-   border-radius: 50%;
-   background: #32A7E2;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   
+.icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #32A7E2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
-table{
+
+table {
     width: 100%;
 }
 
-.product-type-container{
+.product-type-container {
     display: flex;
     align-items: center;
     padding-top: 20px;
     gap: 20px;
     color: #404852;
 }
-.product-type{
+
+.product-type {
     font-size: 16px;
     font-weight: 500;
-    
+
 }
-.purchase-time{
+
+.purchase-time {
     font-size: 14px;
     opacity: 0.5;
     margin-top: 5px;
 }
-.amount{
+
+.amount {
     font-size: 16px;
     font-weight: 600;
     text-align: right;
 }
-.bus-icon{
+
+.bus-icon {
     background: #B548C6;
 
 }
-.house-icon{
+
+.house-icon {
     background: #FF8700;
 
 }
-.food-icon{
+
+.food-icon {
     background-color: #DC3434;
 }
-.play-icon{
+
+.play-icon {
     background: #4BA83D;
 }
-.cost-stat{
-   width: 350px;
-   padding: 60px 40px;
-   background-color: #F9FAFC;
-   border-top-right-radius: 48px;
-   border-bottom-right-radius: 48px;
-   color:#273240;
+
+.cost-stat {
+    width: 350px;
+    padding: 60px 40px;
+    background-color: #F9FAFC;
+    border-top-right-radius: 48px;
+    border-bottom-right-radius: 48px;
+    color: #273240;
 
 }
-.cost-title{
+
+.cost-title {
     font-size: 20px;
 }
-.tips-container{
+
+.tips-container {
     background-image: url("./images/Box-Tips\ \(1\).png");
     background-repeat: no-repeat;
     /* background-size: cover; */
@@ -229,20 +247,24 @@ table{
     /* margin-top: 100px; */
     margin: 100px auto 0px;
 }
-.tips-card{
+
+.tips-card {
     width: 80%;
 }
-.titps-title{
+
+.titps-title {
     font-size: 16px;
     font-weight: 600;
 
 }
-.tip-details{
+
+.tip-details {
     font-size: 12px;
     font-weight: 400;
     opacity: 0.7;
 }
-.tip-btn{
+
+.tip-btn {
     background: #101010;
     width: 100%;
     color: #FFF;
@@ -252,84 +274,149 @@ table{
     margin-top: 50px;
 
 }
-.bar{
+
+.bar {
     margin-top: 30px;
 }
-.skill-bar .info{
+
+.skill-bar .info {
     display: flex;
     justify-content: space-between;
     font-size: 13px;
     font-weight: 500;
     margin-bottom: 10px;
 }
-.skill-bar .bar .progress-line{
+
+.skill-bar .bar .progress-line {
     position: relative;
     width: 100%;
     height: 5px;
     background: #ccc;
 }
-.bar .progress-line span{
+
+.bar .progress-line span {
     height: 100%;
     width: 40%;
     background-color: #31BA96;
     position: absolute;
 }
-.bar-chart{
+
+.bar-chart {
     margin-top: 20px;
 }
-.menu{
+
+.menu {
     display: none;
 }
 
 /* responsive */
-@media screen and (max-width: 425px) {
-    .navbar-container{
+@media screen and (max-width: 768px) {
+    .navbar-container {
         height: 80px;
         margin-top: 20px;
         margin-left: 20px;
         justify-content: flex-start;
     }
-    .logo{
+
+    .menu {
+        display: block;
+    }
+
+    .logo {
         color: #31BA96;
         font-size: 36px;
         font-style: italic;
         margin-left: 10px;
     }
-    .navbar{
-        display: none;
-        border: 1px solid #FFF;
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        /* Initially hidden */
+        width: 200px;
+        background-color: #333;
+        color: #fff;
+        transition: left 0.3s ease;
     }
-    .dashboard{
+
+    .navbar-show {
+        left: 0;
+        top: 15%;
+        padding: 16px;
+    }
+
+    .dashboard {
         display: block;
     }
-    .menu{
-        display: block;
-        position: relative;
-    }
-    .container{
+
+    .container {
         display: block;
         margin: 10px;
     }
-    .expenses-container{
+
+    .expenses-container {
         width: 90%;
         padding-left: 5px;
         padding-right: 5px;
-        
+
     }
-    .expenses-content{
+
+    .expenses-content {
         display: flex;
         justify-content: space-around;
     }
-    .bar-chart{
+
+    .bar-chart {
         width: 90%;
     }
-  .cost-stat{
-    width: 100%;
-    padding: 40px 0px;
-  }
-  .cost-content{
-    width: 90%;
-    margin: 0 auto;
-  }
-    
+
+    .cost-stat {
+        width: 100%;
+        padding: 40px 0px;
+    }
+
+    .cost-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .navbar-container {
+        width: 300px;
+    }
+
+    .container {
+        display: block;
+        margin: 10px;
+    }
+
+    .expenses-container {
+        width: 90%;
+        padding-left: 20px;
+        padding-right: 5px;
+
+    }
+
+    .expenses-content {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .bar-chart {
+        width: 100%;
+    }
+
+    .cost-stat {
+        width: 100%;
+        padding: 40px 0px;
+    }
+
+    .cost-content {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
