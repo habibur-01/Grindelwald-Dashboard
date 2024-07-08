@@ -1,4 +1,4 @@
-const testimonals = document.querySelector(".menu")
-testimonals.addEventListener("click", () => {
-    console.log("hello")
-})
+function toggleNav(){
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('show');
+}

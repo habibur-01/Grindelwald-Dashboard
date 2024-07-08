@@ -284,7 +284,20 @@ table{
 /* responsive */
 @media screen and (max-width: 425px) {
     .navbar-container{
-        position: relative;
+        height: 80px;
+        margin-top: 20px;
+        margin-left: 20px;
+        justify-content: flex-start;
+    }
+    .logo{
+        color: #31BA96;
+        font-size: 36px;
+        font-style: italic;
+        margin-left: 10px;
+    }
+    .navbar{
+        display: none;
+        border: 1px solid #FFF;
     }
     .dashboard{
         display: block;
